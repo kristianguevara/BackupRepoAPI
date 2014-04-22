@@ -1,0 +1,23 @@
+﻿@model ASP.NET_MVC___SteamAPI_Try.Models.LoginModel
+@using System.Text.RegularExpressions;
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+@if (Request.IsAuthenticated)
+{
+    var user = User.Identity.Name;
+    <h2>Hello @user</h2> 
+    @Html.ActionLink("Account", "Index", "Account")
+    @Html.ActionLink("Logout","Signout")
+}
+else
+{
+    @Html.ValidationSummary()
+    using (Html.BeginForm())
+    {
+          <input type="submit" value="Login with Steam" />
+    }
+}

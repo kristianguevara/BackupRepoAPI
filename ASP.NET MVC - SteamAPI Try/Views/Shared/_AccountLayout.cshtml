@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Styles/Style.css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    @{
+        var userid = ViewData["UserID"];
+    }
+    <h2>Home Page</h2>
+    <p>Welcome @User.Identity.Name</p>
+    <p>Your real name: @userid</p>
+    
+    <div>
+        @Html.ActionLink("Add Steam", "Account")
+        @Html.ActionLink("Inventory", "Account")
+        @Html.ActionLink("My Trades", "Account")
+        @Html.ActionLink("My Offers", "Account")
+        @Html.ActionLink("My Bets", "Account")
+        @Html.ActionLink("News", "Account")
+        @Html.ActionLink("Coin Changer", "Account")
+        @Html.ActionLink("Logout", "Signout")
+
+    </div>
+    @RenderBody()
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

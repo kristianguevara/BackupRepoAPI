@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>TinySteamWrapper</id>
+    <version>1.0.3</version>
+    <title>TinySteamWrapper</title>
+    <authors>Pascal Julmy</authors>
+    <owners>Pascal Julmy</owners>
+    <licenseUrl>http://www.gnu.org/licenses/gpl-3.0.txt</licenseUrl>
+    <projectUrl>https://tinysteamwrapper.codeplex.com/</projectUrl>
+    <iconUrl>https://www.codeplex.com/Download?ProjectName=tinysteamwrapper&amp;DownloadId=812562</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This tiny library wraps some basic functions of the Steam WebAPI for C# such as getting profile informations for users, their owned games and play time, current online status and more.</description>
+    <language>en-US</language>
+    <tags>steam wrapper games profile</tags>
+    <dependencies>
+      <group targetFramework="Windows8.1">
+        <dependency id="Newtonsoft.Json" version="6.0.1" />
+      </group>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="Newtonsoft.Json" version="6.0.1" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

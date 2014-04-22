@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Owin.Security.Providers</id>
+    <version>1.3.1</version>
+    <title>Owin.Security.Providers</title>
+    <authors>Jerrie Pelser,  Jérémie Bertrand,  Joseph Yanks</authors>
+    <owners>Jerrie Pelser,  Jérémie Bertrand,  Joseph Yanks</owners>
+    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>https://github.com/owin-middleware/OwinOAuthProviders</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Additional OAuth providers for Katana (OWIN).  Includes providers for
+      - LinkedIn
+      - Yahoo
+      - GitHub
+      - Reddit
+	  - OpenID 2.0 providers
+	  - Steam</description>
+    <releaseNotes>Version 1.3.1
+      - Allows authentication against GitHub enterprise by specifying custom OAuth URLs
+      
+      Version 1.3
+      - Add support for authenticating with Reddit (Thanks to https://github.com/josephyanks)
+
+      Version 1.2.1:
+      - Bug fixes to OpenID provider
+      - Adds the possibility to skip the discovery phase for OpenID provider by indicating directly the provider login uri instead of the provider discovery uri
+
+      Version 1.2:
+      - Adds support for authenticating against OpenID 2.0 providers and Steam (Thanks to https://github.com/laedit)</releaseNotes>
+    <copyright>Copyright 2013, 2014</copyright>
+    <language />
+    <tags>owin katana oauth linkedin yahoo github openid steam</tags>
+    <dependencies>
+      <dependency id="Microsoft.Owin.Security" version="2.0.2" />
+      <dependency id="Newtonsoft.Json" version="5.0.8" />
+    </dependencies>
+  </metadata>
+</package>
